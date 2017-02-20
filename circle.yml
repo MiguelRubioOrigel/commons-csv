@@ -4,5 +4,5 @@ test:
   - find . -type f -regex ".*/target/.*-reports/.*xml" -exec cp {} $CIRCLE_TEST_REPORTS/junit/ \;
    
 machine:
-  java:
-    version: openjdk6
+  jdk:
+    - openjdk6
